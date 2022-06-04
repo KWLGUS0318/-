@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 200vh;
+
+  overflow: hidden;
+}
+
+.top {
+  position: relative;
+  top: -8vw;
+  right: -1vw;
+  width: 104vw;
+  height: 30vh;
+  background-color: #DAEE73;
+  transform: rotate(9deg);
+  z-index: 1;
+}
+
+.map {
+  width: 18vw;
+  height: 20vh;
+  position: absolute;
+  top: 0vw; right: 0;
+  z-index: 2;
+}
+.map-about{
+  width: 100px;
+  height: inherit;
+  position: inherit;
+  right: 0;
+  border: 1px solid black;
+  border-right: none;
+  text-align: center;
+  line-height: 11;
+}
+.map-all{
+  width: 200px;
+  height: 3vw;
+  position: inherit;
+  top: 3vw; right: 5.2vw;
+  text-align: center;
+  line-height: 3.5;
+
+  border: 1px solid black;
+  border-right: none;
+  border-left: none;
+}
+
+.map-profile{
+  width: 100px;
+  height: 4vw;
+  border-right: 1px solid black;
+  position: inherit;
+  top: 6vw; left: 50px;
+  text-align: center;
+  line-height: 5;
+}
+.map-contact{
+position: inherit;
+top: 6vw; right:110px;
+text-align: center;
+line-height: 5;
+}
+
+
+.profile {
+  width: 15vw;
+  height: 30vh;
+  border: 1px solid black;
+  border-radius: 10vw;
+}
+
+.presentation {
+  width: 120vw;
+  height: 50vh;
+  background-color: #86BA79;
+
+  position: relative;
+  top: 10vw;
+  transform: rotate(-10deg);
+  z-index: 1;
+}
+
+.pointer {
+  color: white;
+}
+
+.real-presen {
+  width: 120vw;
+  height: 200vh;
+  background-color: #86BA79;
+
+  position: relative;
+  top: 3vw;
+  z-index: 2;
+}
+
+
+
+@media(max-width:800px) {
+  .top {
+    position: relative;
+    top: -45vw;
+    transform: rotate(13deg);
+  }
+
+  .profile {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 30vw;
+  }
+
+  .presentation {
+    width: 120vw;
+    height: 40vh;
+    background-color: #86BA79;
+
+    position: relative;
+    top: 10vw;
+    transform: rotate(-10deg);
+    z-index: 1;
+  }
+
+  .real-presen {
+    width: 120vw;
+    height: 100vh;
+    background-color: #86BA79;
+
+    position: relative;
+    top: -20vw;
+    z-index: 2;
+  }
+
+}
