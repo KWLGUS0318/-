@@ -34,7 +34,7 @@
 }
 
 .my-img {
-	position: absolute;
+	position: fixed;
 	top: 30vw;
 	left: 25vw; top: 17vw;
 }
@@ -65,6 +65,65 @@
 	top: 13vw; left: 25vw;
 }
 
+.qr-code{
+	width: 5vw;
+	height: 4vh;
+	position: relative;
+	left: 0vw;
+}
+
+.entire{
+
+	position: fixed;
+	width: 15vw;
+	height: 20vh;
+	top: 0; right: 0;
+	z-index: 3;
+
+	text-align: center;
+	line-height: 3;
+}
+
+.map{
+	height: 50%;
+
+	display: flex;
+}
+
+
+.all-moment{
+	width: 50%;
+	height: 100%;
+
+}
+.all-moment :nth-child(2){
+border: 1px solid black;
+border-left: none;
+border-right: none;
+
+}
+
+.empty{
+	width: 100%;
+	height: 50%;
+}
+
+.map-bottom{
+	width: 33.33%;
+	line-height: 6;
+border-right: 1px solid black;
+}
+
+.about{
+width: 50%;
+height:100%;
+line-height: 6;
+
+border: 1px solid black;
+border-right: none;
+
+}
+/*
 .postit {
 	width: 10vw;
 	height: 20vh;
@@ -100,7 +159,7 @@
 
 .postit:hover::before {
 	border-top: 15px solid yellow;
-}
+}*/
 
 @media (max-width:800px){
 	.post-board{
@@ -109,8 +168,56 @@
 	.postit{
 		display: none;
 	}
-
-	.iphone{
-		width: 70vw;
+.my-img{
+	position: fixed;
+	top: 45vw; left: 18vw;
+}
+	.about-img{
+		position: fixed;
+		left: 0vw;
+		width: 100vw;
 	}
+	.about-title{
+		position: fixed;
+		top: 35vw; left: 20vw;
+	}
+	.my-infor{
+		position: fixed;
+		top: 50vw; left: 45vw;
+	}
+
+}
+
+@media (max-width:500px){
+	.post-board{
+		display: none;
+	}
+	.postit{
+		display: none;
+	}
+	.my-img{
+		width: 25vw;
+		position: fixed;
+		top: 70vw; left: 18vw;
+	}
+	.about-img{
+		position: relative;
+		left: 0vw;
+		width: 100vw;
+	}
+	.about-title{
+		font-size: 1.3rem;
+		position: fixed;
+		top: 50vw; left: 23vw;
+	}
+	.my-infor{
+		font-size: 13px;
+		position: fixed;
+		top: 70vw;
+	}
+	.qr-code{
+		width: 10vw;
+		height: 10vw;
+	}
+
 }
