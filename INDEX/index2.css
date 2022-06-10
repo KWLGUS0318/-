@@ -46,7 +46,7 @@
 
 }
 
-.about-window{
+.about-window {
   width: 30vw;
   height: 30vw;
   position: relative;
@@ -83,7 +83,7 @@
 
 .text>h1 {
   margin-top: 2vw;
- text-align: center;
+  text-align: center;
   transform: rotateY(-180deg);
 }
 
@@ -123,7 +123,7 @@
   transform: rotateY(-180deg);
 }
 
-.por-img:after{
+.por-img:after {
   width: 8vw;
   height: 7vw;
   background-color: #fff;
@@ -142,7 +142,7 @@
   z-index: 1;
 }
 
-.design>h1{
+.design>h1 {
   width: 20vw;
   height: 5vw;
   transform: rotateY(180deg);
@@ -150,15 +150,17 @@
   top: 2vw;
 }
 
-.design-door{
+.design-door {
   width: 15vw;
   height: 25vw;
   position: relative;
-  left: 7vw; bottom: -0.4vw;
+  left: 7vw;
+  bottom: -0.4vw;
   transform: rotateY(180deg);
 
 }
 
+/* animation*/
 
 
 @keyframes port-text {
@@ -167,4 +169,47 @@
   }
 }
 
+/* mobile - version*/
+@media (max-width:500px) {
+  .about {
+    width: inherit;
+    border: none;
 
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .about-window {
+    width: inherit;
+    height: 80vh;
+    position: relative;
+    bottom: 0;
+  }
+
+  .design {
+    visibility: hidden;
+  }
+
+  .portfolio {
+    visibility: hidden;  }
+
+  .collect {
+    animation: none;
+  }
+
+  .design>h1{
+    visibility: visible;
+    transform: rotateY(2970deg);
+    position: relative;
+    top: -10vw; left: 0vw;
+    cursor: pointer;
+    }
+
+    .text>h1{
+      width: 20vw;
+      visibility: visible;
+      font-size: 3rem;
+      transform: rotateY(500deg);
+    }
+}

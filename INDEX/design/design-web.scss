@@ -1,0 +1,25 @@
+@mixin array {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#root {
+  width: 100vw;
+  height: 100vh;
+@include array()
+
+  &>h1 {
+    font-family: 'Italiana';
+    text-decoration: underline;
+  }
+
+  &>h2{
+    fo
+  }
+
+}
+
+#left {
+  width: 20vw;
+  height: 20vw;
+}

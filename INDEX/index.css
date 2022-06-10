@@ -21,7 +21,7 @@
 
   display: flex;
   justify-content: center;
- 
+
 }
 
 .explain>img {
@@ -67,22 +67,25 @@
   color: white;
 }
 
-.webletter{
+.webletter {
   position: relative;
-  top: 250px; right: 80px;
+  top: 250px;
+  right: 80px;
   text-align: center;
   font-size: 5rem;
   color: #fff;
 }
-.porttext{
+
+.porttext {
   position: relative;
-  top: 460px; right: 330px;
+  top: 460px;
+  right: 330px;
   font-size: 2.5rem;
   color: #fff;
-  
+
 }
 
-.button{
+.button {
   width: 10vw;
   height: 5vw;
   border-radius: 60px;
@@ -91,11 +94,14 @@
   right: 20vw;
   color: #fff;
   border: 5px solid #fff;
-  background-color: rgba(0 ,0 ,0 ,0);
+  background-color: rgba(0, 0, 0, 0);
   text-align: center;
   font-size: 2rem;
+
+  cursor: pointer;
 }
-.button:hover{
+
+.button:hover {
   width: 20vw;
   transition: 1s;
   transform: translate(30%, 30%);
@@ -106,50 +112,58 @@
 /*  tablet - vesion */
 @media (max-width:500px) {
 
+  .button {
+    width: 25vw;
+    height: 10vh;
+
+    position: absolute;
+    bottom:15vw;
+  }
 }
 
 
 
 /*  mobile - vesion */
 @media (max-width:800px) {
-  .bg-img{
+  .bg-img {
     display: none;
   }
 
 
-  .explain{
+  .explain {
     width: 100%;
   }
 
-  .explain>img{
-  width: 30vw;
-  position: relative;
-  top: -100px; left: 130px; 
-}
+  .explain>img {
+    width: 30vw;
+    position: relative;
+    top: -130px;
+    left: 130px;
+  }
 
-  .name-tag{
+  .name-tag {
     width: 300px;
     position: relative;
-    top: 350px; right: 90px;
+    top: 300px;
+    right: 80px;
   }
-  .name-tag>img{
+
+  .name-tag>img {
     width: 50vw;
   }
 
-  .webletter{
+  .webletter {
     position: relative;
-    right:  5vw;
+    right: 5vw;
+    top: 40vw;
   }
-  .porttext{
+
+  .porttext {
     position: relative;
     left: -55vw;
-    
+    top: 80vw;
+
   }
 
 
-  
-  }
-
-
-  
-
+}
